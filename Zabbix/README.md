@@ -1,4 +1,4 @@
-# 96;0;18M96;0;18M96;0;18M96;0;19M96;0;19M96;0;20M96;0;20M96;0;20M96;0;20M96;0;20M96;0;20M96;0;20M96;0;20M96;0;20M96;0;20M96;0;20M96;0;20M96;0;20M96;0;19MZabbix Agent Daemon for Synology DiskStation DS415+
+#Zabbix Agent Daemon for Synology DiskStation DS415+
 
 ## Simple bash script for making Zabbix Agent available on DS415+
 This helps you to run Zabbix Agent and monitor your DiskStation easy with Zabbix Server
