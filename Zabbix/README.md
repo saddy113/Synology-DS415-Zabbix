@@ -20,3 +20,5 @@ If you need to stop Zabbix Agent Daemon on DiskStation use "stop zabbix"
 
 That's all. If you want reboot DiskStation and Zabbix Agent will be loaded after DS boot.
 Of course ! Add zabbix host to Zabbix server and apply "Template OS Linux" template or any other you use.
+
+For now in template folder you have template for Raid Status monitoring (under development). Apply this template to DS host.
