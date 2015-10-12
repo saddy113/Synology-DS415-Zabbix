@@ -1,7 +1,7 @@
 #Zabbix Agent Daemon for Synology DiskStation DS415+
 
 ## Simple bash script for making Zabbix Agent available on DS415+
-This script helps you to run Zabbix Agent and monitor your DiskStation easily with Zabbix Server
+This script helps you to run Zabbix Agent and monitor your DiskStation easily with Zabbix Server.
 Zabbix Agent is running as service in a background
 
 ## Prerequisites :
