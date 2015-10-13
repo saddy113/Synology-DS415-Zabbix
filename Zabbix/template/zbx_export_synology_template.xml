@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2015-10-13T08:00:00Z</date>
+    <date>2015-10-13T09:29:31Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -674,4 +674,36 @@
             <screens/>
         </template>
     </templates>
+    <triggers>
+        <trigger>
+            <expression>{Synology-Zabbix:Raid.DevicesFailed[md2].last(#5)}=1</expression>
+            <name>Raid-Devices-Failed</name>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>One Disk in Raid ARRAY is in Failed state.</description>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Synology-Zabbix:Raid.DevicesFailed[md2].last(#5)}&gt;1</expression>
+            <name>Raid-Devices-Failed</name>
+            <url/>
+            <status>0</status>
+            <priority>5</priority>
+            <description>Two or more Disks in Raid ARRAY is in Failed state.</description>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Synology-Zabbix:Raid.State[md2].str(CLEAN,#5)}=0</expression>
+            <name>Raid-State</name>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Raid state changed for RAID ARRAY</description>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+    </triggers>
 </zabbix_export>

@@ -13,4 +13,4 @@ Ansible package
 Zabbix Action script
 
 ### Thanks To
-[Thanks to digitalware.sk](http://www.digitalware.sk/)
+Thanks to the company [digitalware.sk](http://www.digitalware.sk/) where I am working, for the publication of source code as Open Source.
