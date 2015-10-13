@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2015-10-13T09:29:31Z</date>
+    <date>2015-10-13T11:33:33Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -588,7 +588,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>Raid.State[md2]</key>
-                    <delay>60</delay>
+                    <delay>15</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -696,8 +696,8 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Synology-Zabbix:Raid.State[md2].str(CLEAN,#5)}=0</expression>
-            <name>Raid-State</name>
+            <expression>{Synology-Zabbix:Raid.State[md2].iregexp(&quot;(ACTIVE|CLEAN)&quot;,#3)}=0</expression>
+            <name>Raid-Status is not in Active/Clean state</name>
             <url/>
             <status>0</status>
             <priority>4</priority>
