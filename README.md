@@ -11,3 +11,6 @@ Source binary tar downloaded from Zabbix download site
 ## ToDo :
 Ansible package
 Zabbix Action script
+
+### Thanks To
+[Thanks to digitalware.sk](http://www.digitalware.sk/)
